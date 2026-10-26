@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plagx Writing Companion – Free Citation & Draft Checker</title>
+<meta name="description" content="Free browser-based academic writing companion: citation generator (APA, MLA, Chicago, Harvard), draft checks, grammar hints, reference matching and reading time. Runs entirely in your browser.">
+<link rel="canonical" href="https://plagiarismcheckerx.github.io/plagx-writing-companion/">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Plagx Writing Companion</h1>
+  <p class="lead">A free academic writing companion for students, researchers and writers. Generate citations, check your draft, get grammar and style hints, match citations to your reference list and estimate reading time, all on one page.</p>
+</header>
+
+<nav class="tabs" role="tablist">
+  <button class="tab active" data-tab="draft">Draft Checks</button>
+  <button class="tab" data-tab="cite">Citations</button>
+  <button class="tab" data-tab="refs">Reference Matching</button>
+</nav>
+
+<main>
+  <section id="draft" class="panel active">
+    <p class="intro">Paste your essay, thesis chapter or article. Word count, reading time and a readability score update live, and the grammar and style hints below point out things to fix.</p>
+    <label for="draftText">Paste your draft</label>
+    <textarea id="draftText" rows="14" placeholder="Paste or type your text here..."></textarea>
+    <div class="stats" id="stats"></div>
+    <p class="muted small">Want a deeper readability analysis? Try the <a target="_blank" rel="noopener" href="https://plagiarismcheckerx.com/readability-checker?utm_source=streamlit&amp;utm_medium=referral&amp;utm_campaign=writing_companion">Plagiarism Checker X Readability Checker</a>.</p>
+    <h3>Grammar &amp; style hints</h3>
+    <ul id="hints" class="hints"><li class="muted">Hints appear as you type.</li></ul>
+  </section>
+
+  <section id="cite" class="panel">
+    <p class="intro">Pick a source type and a citation style, then fill in the details. Your formatted reference appears instantly and is ready to copy into your bibliography.</p>
+    <div class="grid">
+      <label>Source type
+        <select id="cType"><option value="book">Book</option><option value="journal">Journal article</option><option value="web">Website</option></select>
+      </label>
+      <label>Style
+        <select id="cStyle"><option>APA</option><option>MLA</option><option>Chicago</option><option>Harvard</option></select>
+      </label>
+      <label>Authors (Last, First; Last, First)<input id="cAuthors" placeholder="Smith, John; Doe, Jane"></label>
+      <label>Title<input id="cTitle"></label>
+      <label>Year<input id="cYear" inputmode="numeric"></label>
+      <label class="j b">Publisher<input id="cPublisher"></label>
+      <label class="j">Journal<input id="cJournal"></label>
+      <label class="j">Volume(Issue)<input id="cVolume" placeholder="12(3)"></label>
+      <label class="j">Pages<input id="cPages" placeholder="45-67"></label>
+      <label class="w">Website name<input id="cSite"></label>
+      <label class="w j">URL / DOI<input id="cUrl"></label>
+      <label class="w">Accessed date<input id="cAccessed" type="date"></label>
+    </div>
+    <div class="output"><p id="cOut" class="muted">Fill in the fields to generate a citation.</p>
+      <button id="cCopy" type="button">Copy</button></div>
+  </section>
+
+  <section id="refs" class="panel">
+    <p class="intro">Paste your body text on the left and your reference list on the right, one reference per line. The tool finds author–year citations such as (Smith, 2020), (Lee &amp; Khan, 2019; Ali et al., 2021) or Smith (2020), then shows which citations are missing from your list and which references are never cited.</p>
+    <div class="grid two">
+      <label>Body text<textarea id="rBody" rows="12"></textarea></label>
+      <label>Reference list (one per line)<textarea id="rList" rows="12"></textarea></label>
+    </div>
+    <div id="rOut"></div>
+  </section>
+
+  <section class="about">
+
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li><b>Choose a tab:</b> Draft Checks, Citations or Reference Matching.</li>
+      <li><b>Paste or type</b> your text, or fill in the source details.</li>
+      <li><b>Review the results</b>, which update instantly as you type.</li>
+      <li><b>Copy and fix:</b> copy citations into your bibliography and apply the hints to your draft.</li>
+    </ol>
+    <p>Everything is done by JavaScript running in your browser. Nothing is uploaded, stored or sent to a server, so the tool is safe to use with unpublished work. The hints and citation formats are rule-based, so always double-check them against your institution's style guide.</p>
+
+  </section>
+</main>
+
+<footer>
+  A free academic writing utility by Plagiarism Checker X.
+  Check complete documents for plagiarism and AI-generated text at
+  <a target="_blank" rel="noopener" href="https://plagiarismcheckerx.com/?utm_source=streamlit&amp;utm_medium=referral&amp;utm_campaign=writing_companion">Plagiarism Checker X - Text Similarity Detector</a>.
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
