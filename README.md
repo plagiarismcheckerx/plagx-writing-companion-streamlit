@@ -2,7 +2,7 @@
 
 Streamlit edition of [Plagx Writing Companion](https://github.com/plagiarismcheckerx/plagx-writing-companion), a free browser-based academic writing utility by [Plagiarism Checker X](https://plagiarismcheckerx.com/).
 
-### 👉 [Click here for the Streamlit demo](https://plagx-writing-companion.streamlit.app/)
+### 👉 [Click here for the Streamlit demo](https://plagx-writing-companion-app-krw3p87mg2xz2txnrs9vqd.streamlit.app/)
 
 Full version: [plagiarismcheckerx.github.io/plagx-writing-companion](https://plagiarismcheckerx.github.io/plagx-writing-companion/)
 
