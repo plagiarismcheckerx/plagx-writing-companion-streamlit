@@ -8,7 +8,7 @@ Full version: [plagiarismcheckerx.github.io/plagx-writing-companion](https://pla
 
 ## Features
 
-- **Draft checks and reading time:** word, sentence and paragraph counts, Flesch Reading Ease score, and reading and speaking time. For a deeper analysis, try the [Plagiarism Checker X Readability Checker](https://plagiarismcheckerx.com/readability-checker).
+- **Draft checks and reading time:** word, sentence and paragraph counts, Flesch Reading Ease score, and reading and speaking time. For a deeper analysis, try the [Readability Checker](https://plagiarismcheckerx.com/readability-checker).
 - **Grammar and style hints:** repeated words, passive voice, filler words, common mistakes, contractions and long sentences.
 - **Citation generator:** APA, MLA, Chicago and Harvard for books, journal articles and websites.
 - **Reference matching:** finds citations missing from your reference list, and references that are never cited.
